@@ -50,6 +50,8 @@
 <p><code class="sum">063d3c1b7a2b388f80016284136a6a7d7370d771d1bea5aa39df04ebe1e1b9ad</code></p>
 <p>On Windows, run <code>certutil -hashfile APKEditor.apk SHA256</code> and compare. Every version is signed with the same key, so each one installs over the last and keeps what you have saved.</p>
 <p>Older versions are on the <a href="https://github.com/CustomGPTer/apkeditor/releases">GitHub releases page</a>.</p>
+<h2 id="play-protect">If Google Play Protect blocks it</h2>
+<p><b>Why it happens.</b> Google Play Protect checks apps installed from outside Google Play. APK Editor opens other apps, changes them, signs them again and installs them. Some harmful apps do those same things, so Play Protect blocks apps that can do them, whatever they actually do with it. It may say "Harmful app blocked" or "This app may be harmful".</p><p><b>What APK Editor actually does.</b> It does not have Android's internet permission, so it cannot go online, send data or download anything. It has no adverts and no tracking. It only changes an app when you tell it to, it always works on a copy, and it never removes licence checks or unlocks paid features.</p><p><b>Check your file first.</b> Make sure the SHA-256 checksum of your download matches the one above, so you know it is the genuine file from this page.</p><p><b>To install it.</b> Open the Play Store, tap your profile picture, then Play Protect, then Settings (the cog). Turn off <i>Scan apps with Play Protect</i>. Install APK Editor, then turn the setting straight back on.</p><p><b>Afterwards.</b> Play Protect may still warn about APK Editor in a later scan. Updates install over the old version in the same way and keep everything you have saved.</p>
 </div>
 </div>
 </main>
